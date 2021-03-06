@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212,12,12);
+    width: 100%;
+    min-height: 100vh;
+}
+
+section span{
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #000;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+        color: #703310;
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
